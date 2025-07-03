@@ -1,0 +1,49 @@
+(defwindow clock
+    :monitor 0
+    :geometry (geometry :x "0%"
+                        :y "30px"
+                        :width "25%"
+                        :height "500px"
+                        :anchor "top left"
+                        )
+    :stacking "bottom"
+    :focusable "none"
+    :wm-ignore false
+    :namespace "eww"
+(master)
+)
+
+(defwidget master []
+    (box 
+        :orientation "v"
+        (clock)
+        (datewid)
+    )
+)
+
+
+(defwidget clock []
+    (box 
+        :orientation "vertical"
+        time
+    )
+)
+
+(defwidget datewid []
+    (box :class "datewid"
+        :orientation "h"
+    date
+    )
+
+)
+
+(defpoll time
+    :interval '1s'
+`date +%I:%M:%S`
+)
+
+(defpoll date
+    :interval '1s'
+`date +%_A\\ %B\\ %d`
+)
+

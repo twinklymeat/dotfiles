@@ -1,0 +1,49 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file-raw",
+    "source": "/home/twinklymeat/Pictures/senjo_r.ascii",
+    "width": 30
+  },
+  "display": {
+    "color": {
+      "keys": "38;2;135;72;97",
+      "title": "38;2;135;72;97",
+      "output": "38;2;90;107;152",
+      "separator": "38;2;90;107;152"
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "separator",
+    // "packages",
+    // "shell",
+    "display",
+    // "de",
+    "wm",
+    // "wmtheme",
+    // "theme",
+    // "icons",
+    // "font",
+    // "cursor",
+    "terminal",
+    // "terminalfont",
+    "separator",
+    "memory",
+    "cpu",
+    "gpu",
+    // "swap",
+    // "disk",
+    // "localip",
+    "battery",
+    // "poweradapter",
+    // "locale",
+    "break",
+    "colors"
+  ]
+}
