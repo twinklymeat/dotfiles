@@ -1,9 +1,10 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "file-raw",
-    "source": "/home/twinklymeat/Pictures/senjo_r.ascii",
-    "width": 30
+    "type": "kitty",
+    "source": "/home/twinklymeat/Pictures/ryuko_klk_lean_cropped.png",
+    "height": 10,
+    "position": "left"
   },
   "display": {
     "color": {
@@ -14,36 +15,93 @@
     }
   },
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "separator",
+    
+    // "title",
+    // "break",
+    // "separator", 
+    // "os",
+    {
+      "type": "host",
+      "key": " PC"
+      // "keyColor": "38;2;135;72;97"
+    },
+    {
+      "type": "cpu",
+      "key": "│ ├ "
+      // "keyColor": "green"
+    },
+    {
+      "type": "gpu",
+      "key": "│ ├󰍛 "
+      // "keyColor": "green"
+    },
+    {
+      "type": "memory",
+      "key": "│ ├󰍛 "
+      // "keyColor": "green"
+    },
+    {
+      "type": "battery",
+      // "key": "└ └󰂂 "
+      "key": "│ ├󰂂 "
+    },
+    {
+      "type": "os",
+      "key": " OS",
+      // "keyColor": "magenta"
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├ ",
+      // "keyColor": "magenta"
+    },
+    {
+      "type": "de",
+      "key": "│ ├"
+    },
+    {
+      "type": "wm",
+      "key": "│ ├ ",
+      // "keyColor": "magenta"
+    },
+    {
+      "type": "terminal",
+      "key": "│ ├ ",
+      // "keyColor": "magenta"
+    },
+    {
+      "type": "shell",
+      "key": "└ └ ",
+      // "keyColor": "magenta"
+    }
+    // "kernel",
+    // "uptime",
+    // "separator",
     // "packages",
     // "shell",
-    "display",
+    // "bios",
+    // "display",
     // "de",
-    "wm",
+    // "wm",
     // "wmtheme",
     // "theme",
     // "icons",
     // "font",
     // "cursor",
-    "terminal",
+    // "terminal",
     // "terminalfont",
-    "separator",
-    "memory",
-    "cpu",
-    "gpu",
+    // "separator",
+    // "memory",
+    // "cpu",
+    // "gpu",
     // "swap",
     // "disk",
     // "localip",
-    "battery",
+    // "battery"
     // "poweradapter",
     // "locale",
-    "break",
-    "colors"
+    // "break"
+    // "colors"
   ]
+  
 }
